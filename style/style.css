@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.Header{
+    margin: 20px 120px;    
+}
+.Nav{
+    display: flex;
+    justify-content: space-between;
+}
+.Logo{
+    display: flex;
+}
+.Logo h1{
+    margin: auto 0 auto 10px;
+    font-size: 25px;
+    font-family: cursive;
+}
+.List{
+    display: flex;
+}
+.Lists{
+    margin: auto 0;
+}
+
+li{
+    list-style: none;
+    margin: 0px 20px;
+    font-family: cursive;
+}
+.List-1{
+    color: coral;
+    font-weight: 700;
+}
+.List-2{
+    color: darkorchid;
+}
+.List-3{
+    color: darkcyan;
+}
+.List-4{
+    color: cornflowerblue;
+}
+.Buttons{
+    margin: auto 0;
+}
+.Header .Bar{
+    margin: auto 0px;
+    display: none;
+}
+.Button{
+    padding: 10px 40px;
+    background-color: darkorange;
+    color: white;
+    font-family: sans-serif;
+    border: none;
+    border-radius: 8px;
+}
+.Button:hover{
+    background-color: aqua;
+    color: coral;
+}
+.Banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.Banner-Content{
+    padding-right: 100px;
+}
+.Banner-Content .Banner-Para-1{
+    font-size: 45px;
+    font-weight: 800;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.Banner-Content .Banner-Para-2{
+    margin: 20px 0px;
+}
+.Text-Em{
+    color: coral;
+}
+.TV{
+    color: cornflowerblue;
+}
+.Banner-Content Button{
+    background-color: black;
+}
+.Banner-Content Button:hover{
+    background-color: darkorange;
+    color: white;
+}
+.Banner-Image img{
+    width: 100%px;
+}
+.Main{
+    margin: auto 120px;
+}
+.Main .Body{
+    background-image: url('../assets/bg.png');
+    background-size: cover;
+}
+.Main .Body h1{
+    font-size: 30px;
+    margin: 50px 0px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.Standard-Curriculum{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+.Standard-Curriculum-1{
+    height: 350px;
+    width: 30%;
+    border: 2px solid aqua;
+    border-radius: 15px;
+}
+.Standard-Curriculum-2{
+    height: 350px;
+    width: 30%;
+    border: 2px solid bisque;
+    border-radius: 15px;
+}
+.Standard-Curriculum-3{
+    height: 350px;
+    width: 30%;
+    border: 2px solid blueviolet;
+    border-radius: 15px;
+}
+
+@media screen and (max-width:375px) {
+    .Header{
+        margin: 10px 10px;    
+    }
+    .Nav-Bar .Lists{
+        display: none;
+    }
+    .Nav-Bar .Buttons{
+        display: none;
+    }
+    .Nav-Bar .Bar{
+        display: block;
+    }
+    .Banner{
+        flex-direction: column-reverse;
+        margin: 10px 0px;
+    }
+    .Banner-Content{
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Banner-Content .Banner-Para-1{
+        text-align: center;
+        font-size: 35px;
+        margin: 10px 0px;
+    }
+    .Banner-Content .Banner-Para-2{
+        text-align: center;
+        margin: 10px 0px;
+    }
+    .Banner-Image img{
+        width: 100%;
+    }
+    .Main{
+        margin: 0px 10px;
+    }
+    .Main .Body h1{
+        margin: 50px 0px 20px 0px;
+
+    }
+    .Standard-Curriculum{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Standard-Curriculum-1{
+        width: 100%;
+    }
+    .Standard-Curriculum-2{
+        width: 100%;
+        margin: 10px 0px;
+    }
+    .Standard-Curriculum-3{
+        width: 100%;
+    }
+}
