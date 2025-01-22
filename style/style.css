@@ -218,6 +218,7 @@
 }
 .Stories-Left{
     height: 350px;
+    display: block;
     background-color: aqua;
 }
 .Stories-Right{
@@ -330,6 +331,16 @@
     .Arrows{
         display: none;
     }
+    .Stories-Contents{
+        grid-template-columns: 100% 100%;
+    }
+    .Stories-Left{
+        /* display: none; */
+    }
+    .Stories-Right{
+        /* height: 100%; */
+    }
+
     .Footer-Content{
         flex-direction: column;
     }
