@@ -24,7 +24,7 @@
     margin: auto 0;
 }
 
-li{
+.Lists li{
     list-style: none;
     margin: 0px 20px;
     font-family: cursive;
@@ -43,7 +43,7 @@ li{
     color: cornflowerblue;
 }
 .Buttons{
-    margin: auto 0;
+    margin: auto 0px;
 }
 .Header .Bar{
     margin: auto 0px;
@@ -69,11 +69,11 @@ li{
 }
 .Banner-Content{
     padding-right: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .Banner-Content .Banner-Para-1{
     font-size: 45px;
     font-weight: 800;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .Banner-Content .Banner-Para-2{
     margin: 20px 0px;
@@ -180,7 +180,7 @@ li{
 }
 
 .Arrows{
-    margin-top: 50px;
+    margin: 50px 0px;
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -203,7 +203,73 @@ li{
     justify-content: center;
     align-items: center;
 }
-@media screen and (max-width:375px) {
+
+.Our-Stories{
+    margin: 50px 0px;
+}
+.Our-Stories h1{
+    text-align: center;
+    margin: 50px 0px;
+}
+.Stories-Contents{
+    display: grid;
+    grid-template-columns: 47% 51%;
+    gap: 2%;
+}
+.Stories-Left{
+    height: 350px;
+    background-color: aqua;
+}
+.Stories-Right{
+    height: 350px;
+    background-color: aquamarine;
+}
+.Stories-Button{
+    display: flex;
+    justify-content: center;
+}
+.Stories-Button .Button{
+    margin: 50px 0px;
+    background-color: black;
+}
+.Stories-Button .Button:hover{
+    background-color: darkorange;
+    color: white;
+}
+.Footer{
+    background-color: cornflowerblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    padding: 80px 120px 80px 120px;
+}
+.Footer-Content{
+    display: flex;
+    justify-content: space-between;
+
+}
+.Footer-1{
+    width: 30%;
+}
+.Footer-1-kid{
+    display: flex;
+    align-items: center;
+}
+.Footer-Pera{
+    margin-top: 20px;
+}
+
+.Footer-2 h3{
+    margin-bottom: 30px;
+}
+.Footer-2 li{
+    list-style: none;
+    margin: 15px 0px;
+}
+.Footer-3 h3{
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:375px){
     .Header{
         margin: 10px 10px;    
     }
@@ -260,5 +326,20 @@ li{
     }
     .Standard-Curriculum-3{
         width: 100%;
+    }
+    .Arrows{
+        display: none;
+    }
+    .Footer-Content{
+        flex-direction: column;
+    }
+    .Footer{
+        padding: 40px 20px;
+    }
+    .Footer-1{
+        width: 100%;
+    }
+    .Footer-2{
+        margin: 30px 0px;
     }
 }
